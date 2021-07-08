@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Samandar react 1-dars 2-ish
+          Samandar react 1-dars 3-ish
         </p>
         <a
           className="App-link"
