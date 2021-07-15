@@ -1,38 +1,79 @@
-.App {
+body{
+  background: #2C3E50;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.main-section{
+  background: transparent;
+  max-width: 600px;
+  width: 90%;
+  height: 500px;
+  margin: 30px auto;
+}
+
+.clock-holder{
+  width: 100%;
+  background: #fff;
+  margin: 30px auto;
+  position: relative;
+}
+
+.stopwatch{
+  padding: 60px 0px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stopwatch span{
+  background: #00ABA9;
+  color: #fff;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 22px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 70px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stopwatch .stopwatch-btn{
+  background: #fff;
+  margin-top: 30px;
+  margin-left: 5px;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 150px;
+  transform: background 1s;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.stopwatch .stopwatch-btn-red{
+  border: 2px solid #C85454;
+  color: #C85454;
 }
-
-.App-link {
-  color: #61dafb;
+.stopwatch .stopwatch-btn-yel{
+  border: 2px solid #FFC900;
+  color: #FFC900;
 }
+.stopwatch .stopwatch-btn-gre{
+  border: 2px solid #00ABA9;
+  color: #00ABA9;
+}
+.stopwatch .stopwatch-btn-red:hover{
+  background-color: #c85454;
+  border: 2px solid #c85454;
+  color: #fff;
+}
+.stopwatch .stopwatch-btn-yel:hover{
+  background: #FFC900;
+  border: 2px solid #FFC900;
+  counter-reset: #fff;
+}
+.stopwatch .stopwatch-btn-gre:hover{
+  background: #00ABA9;
+  border: 2px solid #00ABA9;
+  color: #fff;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
